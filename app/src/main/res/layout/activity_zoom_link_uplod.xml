@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZoomLinkUplod"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/img_btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/yearalselect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/img_btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/yearalselect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/img_btn_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/yearalselect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_two"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+
+        android:id="@+id/img_btn_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/yearalselect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_theory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_three"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="282dp"
+        android:background="@drawable/backgroundshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/img_btn_theory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theory"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_rev"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_four"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <ImageButton
+        android:id="@+id/img_btn_rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/revision"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_theory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_theory"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="Enter Meeting Link Or Notice"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/et_link_or_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/entrytext"
+        android:ems="10"
+        android:fontFamily="@font/sf"
+
+        android:gravity="top"
+        android:padding="15dp"
+        android:textColor="#2E2E2E"
+        android:textDirection="firstStrongLtr"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.068" />
+
+
+    <ImageButton
+        android:id="@+id/img_btn_noti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bellenable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_link_or_notice"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <ImageButton
+        android:id="@+id/img_btn_creatmeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/createmeeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_noti"
+        app:layout_constraintTop_toBottomOf="@+id/et_link_or_notice" />
+
+    <ImageButton
+        android:id="@+id/img_btn_stopnotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/belloff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_noti"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_creatmeeting"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="23"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_one"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_one"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_one"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_one"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="24"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_two"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_two"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_one"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_two"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="25"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_three"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_three"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_two"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_three"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="26"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_four"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_four"
+        app:layout_constraintStart_toEndOf="@+id/img_btn_three"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_four"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_notifi"
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_noti"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_noti"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_noti"
+        app:layout_constraintVertical_bias="0.312"
+        app:lottie_rawRes="@raw/bell" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_bell_one"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_rev"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_one"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_one"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_bell_two"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_rev"
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:lottie_autoPlay="false"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_bell_three"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_theory"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:lottie_autoPlay="false"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_bell_four"
+        android:layout_width="49dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_theory"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/one_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_one"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/two_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_two"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/three_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_three"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/four_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_four"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rev_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_rev"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_rev"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_rev"
+        app:layout_constraintTop_toBottomOf="@+id/animation_bell_one"
+        app:layout_constraintVertical_bias="0.4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/theory_dot"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_theory"
+        app:layout_constraintEnd_toEndOf="@+id/img_btn_theory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_btn_theory"
+        app:layout_constraintTop_toBottomOf="@+id/animation_bell_four"
+        app:layout_constraintVertical_bias="0.4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/dot_year_and_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

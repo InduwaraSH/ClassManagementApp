@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZoomActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <ImageButton
+        android:id="@+id/imgbtn_Theory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/theory_class_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <ImageButton
+
+        android:id="@+id/imgbtn_Rev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/rev_class_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbtn_Theory"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/theory_class_bell"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_Theory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn_Theory"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_Theory"
+        app:layout_constraintVertical_bias="0.452"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rev_class_bell"
+        android:layout_width="61dp"
+        android:layout_height="76dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_Rev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_Rev"
+        app:layout_constraintVertical_bias="0.452"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/bell_noti" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf"
+        android:text="Online Classes"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="373dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/sf"
+        android:paddingStart="15dp"
+        android:paddingEnd="19dp"
+        android:text="One of the most helpful tips for online classes is creating and sticking to a schedule. In order to succeed in online learning, you must be able to manage your time well. Many online programs offer a more self-directed learning experience than in-classroom experiences"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_notification"
+        android:layout_width="223dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:layout_constraintVertical_bias="0.221"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

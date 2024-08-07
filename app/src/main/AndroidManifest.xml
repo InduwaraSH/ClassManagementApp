@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnandaBS"
+        tools:targetApi="31">
+        <activity
+            android:name=".ZoomLinkUplod"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""
+                android:screenOrientation="userPortrait"/>
+        </activity>
+        <activity
+            android:name=".GraphActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""
+                />
+        </activity>
+        <activity
+            android:name=".ZoomActivity"
+            android:exported="false"
+            android:screenOrientation="userPortrait">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""
+                />
+        </activity>
+        <activity
+            android:name=".badge"
+            android:exported="false"
+            android:screenOrientation="userPortrait">
+
+        </activity>
+        <activity
+            android:name=".MarksByYear"
+            android:exported="false"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".AdmissionRequest"
+            android:exported="false"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".ControlPanel"
+            android:exported="false"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".MarksView"
+            android:exported="false"
+            android:screenOrientation="userPortrait" />
+
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".signingAct"
+            android:exported="false"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".loging"
+            android:exported="true"
+            android:screenOrientation="userPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="userPortrait" />
+    </application>
+
+</manifest>

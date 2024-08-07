@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283507846199",
+    "project_id": "anandabs-6377f",
+    "storage_bucket": "anandabs-6377f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283507846199:android:4db226fe4fc4b8ef60a3b2",
+        "android_client_info": {
+          "package_name": "com.anandabs.anandabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283507846199-8gn62u4l008v4qdu6ir67nq5h5nfl2ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9RygGS726u1HxMKJr0Rzh7OlGt4E4qso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283507846199-8gn62u4l008v4qdu6ir67nq5h5nfl2ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
